@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/app.css" />
-    <title>Proyectos</title>
-  </head>
-  <body>
-    <nav class="nav nav--color">
-      <div class="logo">
-        <img src="../assets/logo.png" alt="Logo-Marcelo-Yevenes" class="logo__img"/>
-        <div class="logo__container-text">
-          <label class="logo__text">Marcelo Yévenes</label>
-          <label class="logo__text">Desarrollador Full-Stack</lab>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/app.css" />
+  <title>Proyectos</title>
+</head>
+
+<body>
+  <nav class="nav nav--color">
+    <div class="logo">
+      <img src="../assets/logo.png" alt="Logo-Marcelo-Yevenes" class="logo__img" />
+      <div class="logo__container-text">
+        <label class="logo__text">Marcelo Yévenes</label>
+        <label class="logo__text">Desarrollador Full-Stack</lab>
       </div>
-      <ul class="nav__list">
-        <li class="nav__element">
-          <a href="../index.html" class="nav__link">Inicio</a>
-        </li>
-        <li class="nav__element"><a href="#skills" class="nav__link">Skills</a></li>
-        <li class="nav__element">
-          <a href="./proyects.html" class="nav__link">Proyectos</a>
-        </li>
-        <li class="nav__element">
-          <a href="./education.html" class="nav__link">Educación</a>
-        </li>
-        <li class="nav__element">
-          <a href="./contact.html" class="nav__link">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-    <main class="container">
-      <h2>Proyectos</h2>
-      <div>
-        <img src="" alt="gif-proyecto" />
+    </div>
+    <ul class="nav__list">
+      <li class="nav__element">
+        <a href="../index.html" class="nav__link">Inicio</a>
+      </li>
+
+      <li class="nav__element">
+        <a href="./proyects.html" class="nav__link">Proyectos</a>
+      </li>
+      <li class="nav__element">
+        <a href="./education.html" class="nav__link">Educación</a>
+      </li>
+      <li class="nav__element">
+        <a href="./contact.html" class="nav__link">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="container">
+    <h2>Proyectos</h2>
+    <div class="project">
+      <img src="../assets/projects/pokemon-gif.gif" alt="gif-proyecto" class="project__img" />
+      <div class="project__content">
         <div>
-          <h3>Titulo</h3>
+          <h3>Pokédex - React</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             corrupti dolorum voluptates nisi mollitia quia suscipit culpa?
@@ -46,33 +49,25 @@
             reprehenderit quis, laboriosam, necessitatibus dolores.
           </p>
         </div>
-        <div>
-          <button><a href="#">Ir al sitio</a></button>
-          <button><a href="#">Ir al código</a></button>
+        <div class="project_buttons">
+          <a href="https://majestic-manatee-11c3ec.netlify.app/" target="_blank"><button class="button">Ir al
+              sitio</button></a>
+          <a href="https://github.com/MarceloYevenesM/app-pokemon-houm" target="_blank"><button class="button">Ir al
+              código</button></a>
         </div>
       </div>
-      <div>
-        <img src="" alt="gif-proyecto" />
-        <div>
-          <h3>Titulo</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            corrupti dolorum voluptates nisi mollitia quia suscipit culpa?
-            Possimus ipsum alias velit consectetur impedit optio eius
-            reprehenderit quis, laboriosam, necessitatibus dolores.
-          </p>
-        </div>
-        <div>
-          <button><a href="#">Ir al sitio</a></button>
-          <button><a href="#">Ir al código</a></button>
-        </div>
-      </div>
-    </main>
-    <footer class="footer footer--position">
-      <ul class="footer__elements ">
-        <li><a href="#" class="footer__element">Linkedin</a></li>
-        <li><a href="#" class="footer__element">Github</a></li>
-      </ul>
-    </footer>
-  </body>
+
+
+    </div>
+
+  </main>
+  <footer class="footer footer--position">
+    <ul class="footer__elements ">
+      <li><a href="https://www.linkedin.com/in/marcelo-y%C3%A9venes-moreno/" class="footer__element"
+          target="_blank">Linkedin</a></li>
+      <li><a href="https://github.com/MarceloYevenesM" class="footer__element" target="_blank">Github</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>

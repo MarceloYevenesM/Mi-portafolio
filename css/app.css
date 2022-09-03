@@ -186,6 +186,34 @@ ul {
   background-color: var(--color-button-secondary-dark);
 }
 
+.button--size{
+  width: 25rem;
+}
+
+.project{
+  width: 80%;
+  display: flex;
+  gap: 3rem;
+}
+
+.project__content{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.project_buttons{
+  display: flex;
+  gap: 2rem;
+}
+
+.project__img{
+ border: none;
+ border-radius: 1rem;
+ max-width: 100%;
+ height: auto; 
+}
+
 
 .footer{
   display: flex;
@@ -215,6 +243,38 @@ ul {
   position: absolute;
   bottom: 0;
 }
+
+
+.contact{
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  width: 60%;
+}
+
+.contact__input{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.contact__section-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

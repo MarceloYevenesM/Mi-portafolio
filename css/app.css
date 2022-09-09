@@ -1,15 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap"); 
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap");
 
 :root {
-  --color-text: rgb(234,205,194);
-  --color-primary: rgb(55,37,73);
+  --color-text: rgb(234, 205, 194);
+  --color-primary: rgb(55, 37, 73);
   --color-primary-dark: rgb(42, 28, 56);
-  --color-secondary: rgb(183,93,105);
+  --color-secondary: rgb(183, 93, 105);
   --color-secondary-dark: rgb(170, 85, 96);
-  --color-button-secondary: rgb(119,76,96);
+  --color-button-secondary: rgb(119, 76, 96);
   --color-button-secondary-dark: rgb(101, 64, 81);
-  
 }
 
 html {
@@ -46,7 +44,7 @@ h3 {
   font-size: 3rem;
 }
 
-h4{
+h4 {
   font-size: 2.5rem;
 }
 
@@ -60,23 +58,21 @@ ul {
   list-style: none;
 }
 
-
-.container{
+.container {
   margin: 0 3rem;
 }
-
 
 .header {
   height: 100vh;
   background-image: url("../assets/hero.jpg");
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
-  position: relative; 
+  position: relative;
   background-attachment: fixed;
-  color: var(--color-text);; 
+  color: var(--color-text);
 }
 
 .header::before {
@@ -95,7 +91,7 @@ ul {
   z-index: 1; /* Recordar que debe llevar un position siempre para que funcione */
 }
 
-.header__content{
+.header__content {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -103,119 +99,150 @@ ul {
   margin: 0 15rem;
 }
 
-.header__description{
+.header__description {
   line-height: 1.5;
 }
 
-.header__buttons{
+.header__buttons {
   display: inline-flex;
   gap: 4rem;
 }
 
-
-.logo{
+.logo {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.logo__img{
+.logo__img {
   width: 5rem;
   margin: 2rem;
 }
 
-.logo__container-text{
+.logo__container-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-.logo__text{
+
+.logo__text {
   padding: 0.3rem;
 }
 
-
-.nav{
+.nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0 2rem;
 }
 
 .nav__list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  margin: 3rem 0;
 }
 
-.nav__element{
+.nav__element {
   padding: 1.5rem;
 }
 
-.nav__element:hover{
+.nav__element:hover {
   border-bottom: 1px solid white;
 }
 
-.nav__link{
+.nav__link {
   color: var(--color-text);
 }
 
-.nav--color{
- background-color: var(--color-primary-dark);;
+.nav--color {
+  background-color: var(--color-primary-dark);
 }
 
-.button{
+.button {
   padding: 1.5rem 3rem;
   border-radius: 1rem;
   border: none;
   letter-spacing: 0.2rem;
   background-color: var(--color-secondary);
-  color: var(--color-text)
+  color: var(--color-text);
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--color-secondary-dark);
   transform: scale(1.1);
 }
 
-.button--secondary-color{
+.button--secondary-color {
   background-color: var(--color-button-secondary);
 }
 
-.button--secondary-color:hover{
+.button--secondary-color:hover {
   background-color: var(--color-button-secondary-dark);
 }
 
-.button--size{
-  width: 25rem;
+.button--size {
+  width: 100%;
 }
 
-.project{
-  width: 80%;
+.tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.tools__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9rem;
+}
+
+.tool__skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tool__img {
+  width: 9rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.project {
   display: flex;
   gap: 3rem;
 }
 
-.project__content{
+.project__content {
   display: flex;
   flex-direction: column;
-  
 }
 
-.project_buttons{
+.project__buttons {
   display: flex;
   gap: 2rem;
 }
 
-.project__img{
- border: none;
- border-radius: 1rem;
- max-width: 100%;
- height: auto; 
+.project__img {
+  border: none;
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
-
-.footer{
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,58 +253,107 @@ ul {
   background-color: var(--color-primary-dark);
 }
 
-.footer__elements{
+.footer__elements {
+  padding: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 4rem;
 }
 
-.footer__element{
+.footer__element {
   padding: 2rem;
 }
 
-.footer__element:hover{
+.footer__element:hover {
   font-size: 1.8rem;
 }
 
-.footer--position{
-  position: absolute;
-  bottom: 0;
+.footer--position {
+  position: relative;
 }
 
-
-.contact{
+.contact {
   display: flex;
   gap: 5rem;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
 }
 
-.contact__input{
+.contact__input {
   width: 100%;
   padding: 1.5rem;
   border-radius: 1rem;
   border: none;
 }
 
-.contact__section-form{
+.contact__section-form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
+@media (min-width: 480px) {
+  .nav__list {
+    flex-direction: row;
+    margin: 3rem;
+  }
+  .footer__elements {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .contact {
+    display: flex;
+    gap: 5rem;
+    flex-direction: column;
+    width: 100%;
+    margin: 6rem 0;
+    align-items: center;
+  }
+
+  .contact__section-form{
+    justify-content: center;
+    width: 60%;
+  }
+
+  .button--size{
+    width: 25rem;
+  }
+
+  .footer--position{
+    position: absolute;
+    bottom: 0;
+  }
+
+  
 
 
+}
 
 
+@media (min-width: 852px) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo__container-text {
+    align-items: flex-start;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
+}

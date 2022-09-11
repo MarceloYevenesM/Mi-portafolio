@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/app.css">
   <title>Contacto</title>
@@ -36,13 +37,15 @@
     </ul>
   </nav>
   <main class="container">
-    <h2>Contacto</h2>
+    <h2 class="wow animate__animated 
+    animate__backInDown">Contacto</h2>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aut deleniti sunt harum beatae inventore
+    <p class="wow animate__animated 
+    animate__backInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt aut deleniti sunt harum beatae inventore
       explicabo vel cupiditate maiores adipisci consequatur voluptatum, alias corrupti enim soluta dolor ut dolorem
       tempora.</p>
 
-    <form class="contact">
+    <form class="contact wow animate__animated animate__bounceIn">
 
       <div class="contact__section-form">
         <label for="email" class="contact__text">Email:</label>
@@ -65,6 +68,10 @@
       <li><a href="https://github.com/MarceloYevenesM" class="footer__element" target="_blank">Github</a></li>
     </ul>
   </footer>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

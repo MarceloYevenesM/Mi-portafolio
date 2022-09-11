@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="../css/normalize.css" />
   <link rel="stylesheet" href="../css/app.css" />
   <title>Proyectos</title>
@@ -36,9 +37,10 @@
     </ul>
   </nav>
   <main class="container">
-    <h2>Proyectos</h2>
-    <div class="projects container">
-      <div class="project">
+    <h2 class="wow animate__animated 
+    animate__backInDown">Proyectos</h2>
+    <div class="projects">
+      <div class="project wow animate__animated animate__backInLeft">
         <img src="../assets/projects/pokemon-gif.gif" alt="gif-proyecto" class="project__img" />
         <div class="project__content">
           <div>
@@ -51,16 +53,16 @@
             </p>
           </div>
           <div class="project__buttons">
-            <a href="https://majestic-manatee-11c3ec.netlify.app/" target="_blank"><button class="button">Ir al
+            <a href="https://majestic-manatee-11c3ec.netlify.app/" target="_blank"><button class="button button--size-proyects">Ir al
                 sitio</button></a>
-            <a href="https://github.com/MarceloYevenesM/app-pokemon-houm" target="_blank"><button class="button button--secondary-color">Ir al
+            <a href="https://github.com/MarceloYevenesM/app-pokemon-houm" target="_blank"><button class="button button--size-proyects button--secondary-color">Ir al
                 código</button></a>
           </div>
         </div>
   
   
       </div>
-      <div class="project">
+      <div class="project wow animate__animated animate__backInLeft">
         <img src="../assets/projects/talent-week.gif" alt="gif-proyecto" class="project__img" />
         <div class="project__content">
           <div>
@@ -73,14 +75,14 @@
             </p>
           </div>
           <div class="project__buttons">
-            <a href="https://deluxe-piroshki-e038aa.netlify.app/" target="_blank"><button class="button">Ir al
+            <a href="https://deluxe-piroshki-e038aa.netlify.app/" target="_blank"><button class="button button--size-proyects">Ir al
                 sitio</button></a>
-            <a href="https://github.com/MarceloYevenesM/talent-week-2022" target="_blank"><button class="button button--secondary-color">Ir al
+            <a href="https://github.com/MarceloYevenesM/talent-week-2022" target="_blank"><button class="button button--size-proyects button--secondary-color">Ir al
                 código</button></a>
           </div>
         </div>
       </div>
-      <div class="project">
+      <div class="project wow animate__animated animate__backInLeft">
         <img src="../assets/projects/demoCafeteria.gif" alt="gif-proyecto" class="project__img" />
         <div class="project__content">
           <div>
@@ -93,9 +95,9 @@
             </p>
           </div>
           <div class="project__buttons">
-            <a href="https://fitness-coffee-2dzrbdlvr-marceloyevenesm.vercel.app/" target="_blank"><button class="button">Ir al
+            <a href="https://fitness-coffee-2dzrbdlvr-marceloyevenesm.vercel.app/" target="_blank"><button class="button button--size-proyects">Ir al
                 sitio</button></a>
-            <a href="https://github.com/MarceloYevenesM/FitnessCoffee" target="_blank"><button class="button button--secondary-color">Ir al
+            <a href="https://github.com/MarceloYevenesM/FitnessCoffee" target="_blank"><button class="button button--size-proyects button--secondary-color">Ir al
                 código</button></a>
           </div>
         </div>
@@ -111,6 +113,10 @@
       <li><a href="https://github.com/MarceloYevenesM" class="footer__element" target="_blank">Github</a></li>
     </ul>
   </footer>
+  <script src="../js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>

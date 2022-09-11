@@ -5,9 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/app.css" />
+
   <title>Portafolio Marcelo-Yévenes</title>
+
 </head>
 
 <body>
@@ -38,9 +42,10 @@
         </li>
       </ul>
     </nav>
-    <section class="header__content">
-      <h1>Mi portafolio - Marcelo Yévenes Moreno</h1>
-      <p class="header__description">
+    <section class="header__content container">
+      <h1 class="wow animate__animated animate__backInLeft">Mi portafolio - Marcelo Yévenes Moreno</h1>
+      <p class="header__description wow animate__animated 
+      animate__backInRight">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
         consectetur facere quibusdam, debitis dolorum aspernatur aliquid
         excepturi rem est ullam repudiandae numquam nihil nobis, sequi
@@ -60,19 +65,25 @@
         architecto molestias voluptate minima cum quisquam ipsam mollitia
         impedit molestiae! Porro quae fugit officia ducimus.
       </p>
-      <div class="header__buttons">
-        <a href="./pages/proyects.html" class="header__button"><button class="button">Proyectos</button></a>
-        <a href="./pages/contact.html"><button class="button">Contacto</button></a>
+      <div class="header__buttons wow animate__animated 
+      animate__backInUp">
+        <a href="./pages/proyects.html" class="header__button"><button
+            class="button button--size">Proyectos</button></a>
+        <a href="./pages/contact.html"><button class="button button--size">Contacto</button></a>
       </div>
     </section>
   </header>
   <main class="container">
     <section id="skills">
-      <h2>Skills</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil explicabo cupiditate ab illum odit dolorum iste, incidunt dolorem quae dicta atque fuga obcaecati eos id enim laborum quis. Deleniti distinctio magnam quia iusto nulla laborum reprehenderit laudantium animi est dolor.</p>
-      <div class="tools">
+      <h2 class="wow animate__animated 
+      animate__backInDown">Skills</h2>
+      <p class="wow animate__animated animate__backInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil explicabo cupiditate ab illum odit dolorum
+        iste, incidunt dolorem quae dicta atque fuga obcaecati eos id enim laborum quis. Deleniti distinctio magnam quia
+        iusto nulla laborum reprehenderit laudantium animi est dolor.</p>
+      <div class="tools wow animate__animated animate__backInLeft">
         <h3>Lenguajes y frameworks</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo minima dolorem earum consectetur cumque et repudiandae fugit amet mollitia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo minima dolorem earum consectetur
+          cumque et repudiandae fugit amet mollitia.</p>
         <div class="tools__skills">
           <div class="tool__skill">
             <img src="./assets/languages/html.webp" alt="logo-tecnologia" class="tool__img" />
@@ -96,9 +107,10 @@
           </div>
         </div>
       </div>
-      <div class="tools">
+      <div class="tools wow animate__animated animate__backInLeft">
         <h3>Herramientas</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo minima dolorem earum consectetur cumque et repudiandae fugit amet mollitia.</p>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo minima dolorem earum consectetur
+          cumque et repudiandae fugit amet mollitia.</p>
         <div class="tools__skills">
           <div class="tool__skill">
             <img src="./assets/tools/vscode.webp" alt="logo-herramienta" class="tool__img" />
@@ -116,34 +128,35 @@
         </div>
       </div>
 
-      <div class="tools">
+      <div class="tools wow animate__animated animate__backInLeft">
         <h3>Habilidades blandas</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo minima dolorem earum consectetur cumque et repudiandae fugit amet mollitia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo minima dolorem earum consectetur
+          cumque et repudiandae fugit amet mollitia.</p>
 
         <div class="tools__skills">
           <div class="tool__skill">
             <img src="./assets/habilitys/equipo.webp" alt="habilidad" class="tool__img" />
             <label for="">Trabajo en equipo</label>
-        </div>
-        <div class="tools__skills">
-          <div class="tool__skill">
-            <img src="./assets/habilitys/puntualidad.webp" alt="habilidad" class="tool__img" />
-            <label for="">Puntualidad</label>
-        </div>
-        <div class="tools__skills">
-          <div class="tool__skill">
-            <img src="./assets/habilitys/activa.webp" alt="habilidad" class="tool__img" />
-            <label for="">Escucha activa</label>
-        </div>
-        <div class="tools__skills">
-          <div class="tool__skill">
-            <img src="./assets/habilitys/tolerancia.webp" alt="habilidad" class="tool__img" />
-            <label for="">Tolerancia al estrés</label>
-        </div>
-       
-         
-        
-      </div>
+          </div>
+          <div class="tools__skills">
+            <div class="tool__skill">
+              <img src="./assets/habilitys/puntualidad.webp" alt="habilidad" class="tool__img" />
+              <label for="">Puntualidad</label>
+            </div>
+            <div class="tools__skills">
+              <div class="tool__skill">
+                <img src="./assets/habilitys/activa.webp" alt="habilidad" class="tool__img" />
+                <label for="">Escucha activa</label>
+              </div>
+              <div class="tools__skills">
+                <div class="tool__skill">
+                  <img src="./assets/habilitys/tolerancia.webp" alt="habilidad" class="tool__img" />
+                  <label for="">Tolerancia al estrés</label>
+                </div>
+
+
+
+              </div>
     </section>
   </main>
   <footer class="footer">
@@ -157,6 +170,11 @@
       </li>
     </ul>
   </footer>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
 </body>
 
 </html>

@@ -10,35 +10,7 @@
 
 
 
-.button {
-  padding: 1.5rem 3rem;
-  border-radius: 1rem;
-  border: none;
-  letter-spacing: 0.2rem;
-  background-color: var(--color-secondary);
-  color: var(--color-text);
-}
 
-.button:hover {
-  background-color: var(--color-secondary-dark);
-  transform: scale(1.1);
-}
-
-.button--secondary-color {
-  background-color: var(--color-button-secondary);
-}
-
-.button--secondary-color:hover {
-  background-color: var(--color-button-secondary-dark);
-}
-
-.button--size {
-  width: 100%;
-}
-
-.button--size-proyects {
-  width: 100%;
-}
 
 .tools {
   display: flex;

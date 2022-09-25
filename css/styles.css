@@ -121,3 +121,22 @@ ul {
     color: #eacdc2; }
   .nav--color {
     background-color: var(--color-primary-dark); }
+
+.button {
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  border: none;
+  letter-spacing: 0.2rem;
+  background-color: #b75d69;
+  color: #eacdc2; }
+  .button:hover {
+    background-color: #aa5560;
+    transform: scale(1.1); }
+  .button--secondary-color {
+    background-color: #774c60; }
+  .button--secondary-color:hover {
+    background-color: #654051; }
+  .button--size {
+    width: 100%; }
+  .button--size-proyects {
+    width: 100%; }

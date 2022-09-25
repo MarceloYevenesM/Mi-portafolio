@@ -189,18 +189,15 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 3rem; }
-
-.project__content {
-  display: flex;
-  flex-direction: column; }
-
-.project__buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem; }
-
-.project__img {
-  border: none;
-  border-radius: 1rem;
-  max-width: 100%;
-  height: auto; }
+  .project__content {
+    display: flex;
+    flex-direction: column; }
+  .project__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; }
+  .project__img {
+    border: none;
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto; }

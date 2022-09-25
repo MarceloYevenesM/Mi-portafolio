@@ -140,3 +140,24 @@ ul {
     width: 100%; }
   .button--size-proyects {
     width: 100%; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #eacdc2;
+  height: 20vh;
+  width: 100%;
+  background-color: #2a1c38;
+  margin-top: auto; }
+  .footer__elements {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; }
+  .footer__element {
+    padding: 2rem; }
+  .footer__element:hover {
+    font-size: 1.8rem; }

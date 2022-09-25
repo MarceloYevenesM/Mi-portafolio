@@ -141,6 +141,23 @@ ul {
   .button--size-proyects {
     width: 100%; }
 
+.tools {
+  display: flex;
+  flex-direction: column; }
+  .tools .tools__skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9rem; }
+
+.tool__skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; }
+
+.tool__img {
+  width: 9rem; }
+
 .footer {
   display: flex;
   justify-content: center;

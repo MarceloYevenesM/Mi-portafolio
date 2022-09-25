@@ -1,0 +1,24 @@
+.tools {
+    display: flex;
+    flex-direction: column;
+
+    .tools__skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9rem;
+    }
+}
+
+
+.tool {
+    &__skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__img {
+        width: 9rem;
+    }
+}

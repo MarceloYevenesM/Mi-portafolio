@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    color: $color-text;
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 3.5rem;
+    border-bottom: 6px solid $color-text;
+    margin: 5rem 0;
+    height: 6.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text;
+    letter-spacing: 0.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: auto 3rem;
+}

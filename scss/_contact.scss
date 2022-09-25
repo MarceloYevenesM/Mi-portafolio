@@ -1,0 +1,19 @@
+.contact {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  width: 100%;
+
+  &__input {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  &__section-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

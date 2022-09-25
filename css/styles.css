@@ -201,3 +201,18 @@ ul {
     border-radius: 1rem;
     max-width: 100%;
     height: auto; }
+
+.contact {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  width: 100%; }
+  .contact__input {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none; }
+  .contact__section-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; }

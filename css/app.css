@@ -26,6 +26,13 @@ body {
   font-size: 1.6rem;
   color: var(--color-text);
   background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  padding: 3rem;
 }
 
 h1 {
@@ -253,10 +260,10 @@ ul {
   justify-content: center;
   align-items: center;
   border-top: 1px solid var(--color-text);
-  margin-top: 10rem;
   height: 20vh;
   width: 100%;
   background-color: var(--color-primary-dark);
+  margin-top: auto;
 }
 
 .footer__elements {
@@ -274,10 +281,6 @@ ul {
 
 .footer__element:hover {
   font-size: 1.8rem;
-}
-
-.footer--position {
-  position: relative;
 }
 
 .contact {
@@ -360,15 +363,14 @@ ul {
   .header {
     height: 100vh;
   }
-  
+
   .project {
     flex-direction: row;
   }
 }
 
 @media (min-width: 1200px) {
-
-  .header__content{
+  .header__content {
     margin: 0 10%;
     gap: 2rem;
   }

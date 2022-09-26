@@ -1,30 +1,35 @@
 .button {
-    padding: 1.5rem 3rem;
-    border-radius: 1rem;
-    border: none;
-    letter-spacing: 0.2rem;
-    background-color: $color-secondary;
-    color: $color-text;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  border: none;
+  letter-spacing: 0.2rem;
+  background-color: $color-secondary;
+  color: $color-text;
 
+  &:hover {
+    background-color: $color-secondary-dark;
+    transform: scale(1.1);
+  }
 
-    &:hover {
-        background-color: $color-secondary-dark;
-        transform: scale(1.1);
-    }
+  &--secondary-color {
+    background-color: $color-button-secondary;
+  }
 
-    &--secondary-color {
-        background-color: $color-button-secondary;
-    }
+  &--secondary-color:hover {
+    background-color: $color-button-secondary-dark;
+  }
 
-    &--secondary-color:hover {
-        background-color: $color-button-secondary-dark;
-    }
+  &--size {
+    width: 100%;
+  }
 
+  &--size-proyects {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
     &--size {
-        width: 100%;
+      width: 25rem;
     }
-
-    &--size-proyects {
-        width: 100%;
-    }
+  }
 }

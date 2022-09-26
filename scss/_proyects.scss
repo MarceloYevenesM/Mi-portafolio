@@ -3,6 +3,12 @@
   flex-direction: column;
   justify-content: center;
   gap: 5rem;
+
+  @media (min-width: 1200px) {
+    &__buttons {
+      flex-direction: row;
+    }
+  }
 }
 
 .project {
@@ -26,5 +32,11 @@
     border-radius: 1rem;
     max-width: 100%;
     height: auto;
+  }
+
+  @media (min-width: 1020px) {
+    & {
+      flex-direction: row;
+    }
   }
 }

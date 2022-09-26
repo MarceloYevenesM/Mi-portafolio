@@ -8,7 +8,6 @@
   background-color: $color-primary-dark;
   margin-top: auto;
 
-
   &__elements {
     padding: 0;
     display: flex;
@@ -26,4 +25,11 @@
     font-size: 1.8rem;
   }
 
+  @media (min-width: 480px) {
+    &__elements {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+    }
+  }
 }

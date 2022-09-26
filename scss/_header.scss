@@ -43,6 +43,25 @@
     flex-direction: column;
     gap: 4rem;
   }
+
+  @media (min-width: 768px) {
+    &__buttons {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1020px) {
+    & {
+      height: 100vh;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__content {
+      margin: 0 10%;
+      gap: 2rem;
+    }
+  }
 }
 
 .logo {
@@ -66,6 +85,18 @@
   &__text {
     padding: 0.3rem;
   }
+
+  @media (min-width: 852px) {
+    & {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__container-text {
+      align-items: flex-start;
+    }
+  }
 }
 
 .nav {
@@ -84,22 +115,37 @@
     padding: 0;
     margin: 3rem 0;
   }
-  
+
   &__element {
     padding: 1.5rem;
   }
-  
+
   &__element:hover {
     border-bottom: 1px solid white;
   }
-  
+
   &__link {
     color: $color-text;
   }
-  
+
   &--color {
-    background-color: var(--color-primary-dark);
+    background-color: $color-primary-dark;
+  }
+
+  @media (min-width: 768px) {
+    &__list {
+      flex-direction: row;
+      margin: 3rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2rem;
+    }
   }
 }
-
-

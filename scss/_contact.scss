@@ -16,4 +16,20 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  @media (min-width: 768px) {
+    & {
+      display: flex;
+      gap: 5rem;
+      flex-direction: column;
+      width: 100%;
+      margin: 6rem 0;
+      align-items: center;
+    }
+
+    &__section-form {
+      justify-content: center;
+      width: 60%;
+    }
+  }
 }

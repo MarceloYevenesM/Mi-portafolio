@@ -82,6 +82,16 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 4rem; }
+  @media (min-width: 768px) {
+    .header__buttons {
+      flex-direction: row; } }
+  @media (min-width: 1020px) {
+    .header {
+      height: 100vh; } }
+  @media (min-width: 1200px) {
+    .header__content {
+      margin: 0 10%;
+      gap: 2rem; } }
 
 .logo {
   display: flex;
@@ -98,6 +108,13 @@ ul {
     align-items: center; }
   .logo__text {
     padding: 0.3rem; }
+  @media (min-width: 852px) {
+    .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+    .logo__container-text {
+      align-items: flex-start; } }
 
 .nav {
   display: flex;
@@ -120,7 +137,18 @@ ul {
   .nav__link {
     color: #eacdc2; }
   .nav--color {
-    background-color: var(--color-primary-dark); }
+    background-color: #2a1c38; }
+  @media (min-width: 768px) {
+    .nav__list {
+      flex-direction: row;
+      margin: 3rem; } }
+  @media (min-width: 768px) {
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2rem; } }
 
 .button {
   padding: 1.5rem 3rem;
@@ -140,6 +168,9 @@ ul {
     width: 100%; }
   .button--size-proyects {
     width: 100%; }
+  @media (min-width: 768px) {
+    .button--size {
+      width: 25rem; } }
 
 .tools {
   display: flex;
@@ -178,12 +209,20 @@ ul {
     padding: 2rem; }
   .footer__element:hover {
     font-size: 1.8rem; }
+  @media (min-width: 480px) {
+    .footer__elements {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem; } }
 
 .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5rem; }
+  @media (min-width: 1200px) {
+    .projects__buttons {
+      flex-direction: row; } }
 
 .project {
   display: flex;
@@ -201,6 +240,9 @@ ul {
     border-radius: 1rem;
     max-width: 100%;
     height: auto; }
+  @media (min-width: 1020px) {
+    .project {
+      flex-direction: row; } }
 
 .contact {
   display: flex;
@@ -216,3 +258,14 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem; }
+  @media (min-width: 768px) {
+    .contact {
+      display: flex;
+      gap: 5rem;
+      flex-direction: column;
+      width: 100%;
+      margin: 6rem 0;
+      align-items: center; }
+    .contact__section-form {
+      justify-content: center;
+      width: 60%; } }

@@ -1,24 +1,21 @@
 .tools {
-    display: flex;
-    flex-direction: column;
+  @include flex(column, start, start);
 
-    .tools__skills {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 9rem;
-    }
+  .tools__skills {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    gap: 9rem;
+    width: 100%;
+  }
 }
 
-
 .tool {
-    &__skill {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
+  &__skill {
+    @include flex(row, center, center);
+    gap: 1.5rem;
+  }
 
-    &__img {
-        width: 9rem;
-    }
+  &__img {
+    @include sizes(9rem, auto);
+  }
 }

@@ -1,22 +1,22 @@
+
+
 .header {
+  @include flex(column, center, center);
   background-image: url("../assets/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
   position: relative;
   background-attachment: fixed;
   color: $color-text;
   padding: 0 0 4rem 0;
 
   &::before {
+    @include sizes(100%, 100%);
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgb(55, 37, 73);
     opacity: 1;
     mix-blend-mode: hard-light;
@@ -28,10 +28,9 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
+    @include flex(column, center, start);
+    @include sizes(auto, 100%);
+    
   }
 
   &__description {
@@ -39,20 +38,19 @@
   }
 
   &__buttons {
-    display: flex;
-    flex-direction: column;
+    @include flex(column, center, start);
     gap: 4rem;
   }
 
   @media (min-width: 768px) {
     &__buttons {
-      flex-direction: row;
+      @include flex(row, center, center);
     }
   }
 
   @media (min-width: 1020px) {
     & {
-      height: 100vh;
+      @include sizes(auto, 100vh);
     }
   }
 
@@ -65,21 +63,16 @@
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(column, center, center);
+
 
   &__img {
-    width: 5rem;
+    @include sizes(5rem, auto);
     margin: 2rem;
   }
 
   &__container-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
   }
 
   &__text {
@@ -88,30 +81,22 @@
 
   @media (min-width: 852px) {
     & {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+      @include flex(row, center, center);
     }
 
     &__container-text {
-      align-items: flex-start;
+      @include flex(column, center, flex-start);
     }
   }
 }
 
 .nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  @include sizes(100%, auto);
+  @include flex(column, center, center);
   padding: 0 2rem;
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
     padding: 0;
     margin: 3rem 0;
   }
@@ -134,17 +119,15 @@
 
   @media (min-width: 768px) {
     &__list {
-      flex-direction: row;
+      @include flex(row, center, center);
       margin: 3rem;
     }
   }
 
   @media (min-width: 768px) {
     & {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
+      @include sizes(100%, auto);
+      @include flex(row, space-between, center);
       padding: 0 2rem;
     }
   }

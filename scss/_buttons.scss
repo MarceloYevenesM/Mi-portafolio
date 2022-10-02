@@ -20,16 +20,16 @@
   }
 
   &--size {
-    width: 100%;
+    @include sizes(100%, auto);
   }
 
   &--size-proyects {
-    width: 100%;
+    @include sizes(100%, auto);
   }
 
   @media (min-width: 768px) {
     &--size {
-      width: 25rem;
+      @include sizes(25rem, auto);
     }
   }
 }

@@ -1,35 +1,30 @@
 .contact {
-  display: flex;
+  @include sizes(100%, auto);
+  @include flex(column, center, center);
   gap: 5rem;
-  flex-direction: column;
-  width: 100%;
 
   &__input {
-    width: 100%;
+    @include sizes(100%, auto);
     padding: 1.5rem;
     border-radius: 1rem;
     border: none;
   }
 
   &__section-form {
-    display: flex;
-    flex-direction: column;
+    @include flex(column, center, start);
     gap: 0.5rem;
   }
 
   @media (min-width: 768px) {
-    & {
-      display: flex;
+    & {@include sizes(100%, auto);
+      @include flex(column, center, center);
       gap: 5rem;
-      flex-direction: column;
-      width: 100%;
       margin: 6rem 0;
-      align-items: center;
     }
 
     &__section-form {
-      justify-content: center;
-      width: 60%;
+      
+      @include sizes(60%, auto);
     }
   }
 }

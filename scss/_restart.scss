@@ -28,11 +28,11 @@ h1 {
 }
 
 h2 {
+    @include sizes(auto, 6.5rem);
     display: inline-block;
     font-size: 3.5rem;
     border-bottom: 6px solid $color-text;
     margin: 5rem 0;
-    height: 6.5rem;
 }
 
 h3 {

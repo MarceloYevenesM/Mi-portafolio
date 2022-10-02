@@ -1,29 +1,18 @@
 .projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex(column, center, center);
   gap: 5rem;
-
-  @media (min-width: 1200px) {
-    &__buttons {
-      flex-direction: row;
-    }
-  }
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
+  @include flex(column, center, center);
   gap: 3rem;
 
   &__content {
-    display: flex;
-    flex-direction: column;
+    @include flex(column, center, center);
   }
 
   &__buttons {
-    display: flex;
-    flex-direction: column;
+    @include flex(column, center, center);
     gap: 4rem;
   }
 
@@ -36,7 +25,18 @@
 
   @media (min-width: 1020px) {
     & {
-      flex-direction: row;
+      @include flex(row, center, center);
+    }
+
+  }
+  @media (min-width: 1200px) {
+   
+    &__content {
+        @include flex(column, start, start);
+    }
+
+    &__buttons {
+      @include flex(row, start, start);
     }
   }
 }

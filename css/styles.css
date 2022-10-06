@@ -332,3 +332,12 @@ ul {
     .contact__section-form {
       width: 60%;
       height: auto; } }
+
+.course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .course__img {
+    max-width: 100%;
+    height: auto; }

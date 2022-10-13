@@ -2,7 +2,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif !important; }
 
 *,
 *:before,
@@ -10,6 +10,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  font-family: "Montserrat", sans-serif !important;
   font-size: 1.6rem;
   color: #eacdc2;
   background-color: #372549;
@@ -21,7 +22,8 @@ main {
   padding: 3rem; }
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-weight: 600; }
 
 h2 {
   width: auto;

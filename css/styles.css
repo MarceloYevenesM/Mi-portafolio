@@ -40,8 +40,8 @@ h4 {
   font-size: 2.5rem; }
 
 a {
-  text-decoration: none;
-  color: #eacdc2;
+  text-decoration: none !important;
+  color: #eacdc2 !important;
   letter-spacing: 0.2rem; }
 
 ul {

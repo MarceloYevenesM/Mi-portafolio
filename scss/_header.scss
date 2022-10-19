@@ -124,7 +124,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1020px) {
     & {
       @include sizes(100%, auto);
       @include flex(row, space-between, center);
